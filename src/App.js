@@ -13,14 +13,14 @@ function App() {
     <div>
     <div class="container">
       <header class="main">
-        <Link to="react-router/home">Home</Link>
+        <Link to="/home/react-router">Home</Link>
         <Link to="/react-router/post">Posts</Link>
         <Link to="/react-router/contacts">Contacts</Link>
         <Link to="/react-router/images">Images</Link>
       </header>
       </div>
     <Routes>
-      <Route path="/react-router/home" element={<HomePage />}></Route>
+      <Route path="/home/react-router" element={<HomePage />}></Route>
       <Route path="/react-router/post" element={<Publications />}></Route>
       <Route path="/react-router/contacts" element={<MainContactsApp />}></Route>
       <Route path="/react-router/images" element={<ImageApp/>}></Route>
