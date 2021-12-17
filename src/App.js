@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import  {Route, Routes,Link} from 'react-router-dom';
+import  {Route, Routes,Link,BrowserRouter as Router} from 'react-router-dom';
 import Publications from './Components/post/Publications';
 import HomePage from './Components/home/HomePage';
 import MainContactsApp from './Components/contacts/MainPage';
@@ -9,6 +9,7 @@ import ImageApp from './Components/images/Images';
 
 function App() {
   return (
+    <Router>
     <div>
     <div class="container">
       <header class="main">
@@ -25,6 +26,7 @@ function App() {
       <Route path="/images" element={<ImageApp/>}></Route>
     </Routes>
     </div>
+    </Router>
   );
 }
 
