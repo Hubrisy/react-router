@@ -13,17 +13,17 @@ function App() {
     <div>
     <div class="container">
       <header class="main">
-        <Link to="/home">Home</Link>
-        <Link to="/post">Posts</Link>
-        <Link to="/contacts">Contacts</Link>
-        <Link to="/images">Images</Link>
+        <Link to="react-router/home">Home</Link>
+        <Link to="/react-router/post">Posts</Link>
+        <Link to="/react-router/contacts">Contacts</Link>
+        <Link to="/react-router/images">Images</Link>
       </header>
       </div>
     <Routes>
-      <Route path="/home" element={<HomePage />}></Route>
-      <Route path="/post" element={<Publications />}></Route>
-      <Route path="/contacts" element={<MainContactsApp />}></Route>
-      <Route path="/images" element={<ImageApp/>}></Route>
+      <Route path="/react-router/home" element={<HomePage />}></Route>
+      <Route path="/react-router/post" element={<Publications />}></Route>
+      <Route path="/react-router/contacts" element={<MainContactsApp />}></Route>
+      <Route path="/react-router/images" element={<ImageApp/>}></Route>
     </Routes>
     </div>
     </BrowserRouter>
