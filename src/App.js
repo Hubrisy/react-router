@@ -6,12 +6,9 @@ import HomePage from './Components/home/HomePage';
 import MainContactsApp from './Components/contacts/MainPage';
 import ImageApp from './Components/images/Images';
 
-
-function App() {
-  return (
-    <HashRouter>
-    <div>
-    <div class="container">
+function Header(){
+  return(
+<div class="container">
       <header class="main">
         <Link to="/home">Home</Link>
         <Link to="post">Posts</Link>
@@ -19,6 +16,13 @@ function App() {
         <Link to="images">Images</Link>
       </header>
       </div>
+  )
+}
+function App() {
+  return (
+    <HashRouter>
+      < Header/>
+    <div>
     <Routes>
       <Route path="/home" element={<HomePage />}></Route>
       <Route path="/post" element={<Publications />}></Route>
