@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import  {Route, Routes,} from 'react-router-dom';
+import  {Route, Routes,Link} from 'react-router-dom';
 import Publications from './Components/post/Publications';
 import HomePage from './Components/home/HomePage';
 import MainContactsApp from './Components/contacts/MainPage';
@@ -12,10 +12,10 @@ function App() {
     <div>
     <div class="container">
       <header class="main">
-        <a href="/home">Home</a>
-        <a href="post">Posts</a>
-        <a href="contacts">Contacts</a>
-        <a href="images">Images</a>
+        <Link to="/home">Home</Link>
+        <Link to="post">Posts</Link>
+        <Link to="contacts">Contacts</Link>
+        <Link to="images">Images</Link>
       </header>
       </div>
     <Routes>
